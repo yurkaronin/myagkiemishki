@@ -1,0 +1,56 @@
+.messengers__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+}
+
+.messengers__item {
+  width: 100%;
+  max-width: 30px;
+  margin-right: 5px;
+
+  & a {
+    width: 100%;
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+  }
+
+
+}
+
+.messengers__phone {
+  max-width: 150px;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 15px;
+
+  & img {
+    display: none;
+  }
+
+
+}
+
+
+@media (max-width:1000px) {
+
+  .messengers__phone {
+    max-width: 40px;
+    margin: 0;
+  }
+
+  .messengers__phone img {
+    display: block;
+  }
+
+  .messengers__list {
+    align-items: baseline;
+  }
+
+
+
+
+}
