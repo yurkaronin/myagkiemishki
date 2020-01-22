@@ -1,0 +1,39 @@
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.benefits-item {
+  max-width: 33%;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+.icon-bag::before {
+  background-image: url(../images/icons/bag.svg);
+}
+
+.icon-bear::before {
+  background-image: url(../images/icons/toy-teddy-bear-1.svg);
+}
+
+.icon-grass::before {
+  background-image: url(../images/icons/leaves.svg);
+}

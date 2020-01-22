@@ -81,10 +81,12 @@ img {
 /* Blocks */
 @import "blocks/messengers";
 @import "blocks/button";
+@import "blocks/benefits-list";
 
 
 @import "blocks/header";
 @import "blocks/navigation";
+@import "blocks/first-screen";
 
 
 @media (min-width: 1000px) {
