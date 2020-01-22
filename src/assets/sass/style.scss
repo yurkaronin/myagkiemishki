@@ -87,19 +87,39 @@ img {
 @import "blocks/navigation";
 
 
+@media (min-width: 1000px) {
+  .desktop-hide {
+    display: none;
+  }
 
+}
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
 
   .container {
     padding: 0 5px;
 
   }
 
-  .tablet-hide {
+  .hide-1000 {
     display: none;
   }
 
+  .show-1000 {
+    display: block;
+  }
 
+
+
+}
+
+@media (max-width: 800px) {
+  .show-800 {
+    display: block;
+  }
+
+  .hide-800 {
+    display: none;
+  }
 
 }

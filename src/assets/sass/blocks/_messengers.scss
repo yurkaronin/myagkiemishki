@@ -1,8 +1,7 @@
-.messengers__list {
+.messengers {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
 
 }
 
@@ -11,46 +10,41 @@
   max-width: 30px;
   margin-right: 5px;
 
-  & a {
-    width: 100%;
-    text-decoration: none;
-    font-family: inherit;
-    color: inherit;
-  }
-
-
 }
 
-.messengers__phone {
+.messengers__item--phone {
   max-width: 150px;
   font-weight: 700;
   margin: 0;
   margin-left: 15px;
 
-  & img {
-    display: none;
-  }
+}
 
-
+.messengers__link {
+  width: 100%;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
 }
 
 
 @media (max-width:1000px) {
 
-  .messengers__phone {
-    max-width: 40px;
-    margin: 0;
-  }
-
-  .messengers__phone img {
-    display: block;
-  }
-
-  .messengers__list {
+  .messengers {
     align-items: baseline;
   }
 
+  .messengers__item--phone {
+    max-width: 30px;
+    margin: 0;
+    margin-right: 5px;
+  }
 
+  .messengers__phone-icon {
+    display: block;
+    max-width: 40px;
+    margin: 0;
+  }
 
 
 }

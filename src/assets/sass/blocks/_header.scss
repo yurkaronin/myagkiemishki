@@ -1,6 +1,7 @@
 .header {
 
   padding-top: 10px;
+  position: relative;
 
   box-shadow: 0 0 29px rgba(32, 12, 23, 0.15);
 
@@ -31,8 +32,6 @@
 .header__contacts {
   max-width: 350px;
   width: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .header__buttons {
@@ -85,9 +84,16 @@
 }
 
 @media (max-width: 420px) {
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
+
   .header__logo {
     max-width: 130px;
   }
+
 
 }
 
