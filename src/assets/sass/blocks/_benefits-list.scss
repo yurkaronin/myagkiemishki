@@ -1,16 +1,18 @@
 .benefits-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 100%;
 }
 
 .benefits-item {
   max-width: 33%;
   width: 100%;
-  color: #fff;
+  color: $black;
   font-size: 16px;
+  line-height: 22px;
 
   &::before {
     content: '';
@@ -37,3 +39,50 @@
 .icon-grass::before {
   background-image: url(../images/icons/leaves.svg);
 }
+
+.icon-cake::before {
+  background-image: url(../images/icons/cake.svg);
+}
+
+.icon-furniture::before {
+  background-image: url(../images/icons/furniture.svg);
+}
+
+.icon-heart-inside::before {
+  background-image: url(../images/icons/heart-inside.svg);
+}
+
+.icon-gift::before {
+  background-image: url(../images/icons/gift.svg);
+}
+
+
+.icon-toy-teddy-bear-3::before {
+  background-image: url(../images/icons/toy-teddy-bear-3.svg);
+}
+.icon-laptop::before {
+  background-image: url(../images/icons/laptop.svg);
+}
+.icon-wallet::before {
+  background-image: url(../images/icons/wallet.svg);
+}
+.icon-toy-car-bear::before {
+  background-image: url(../images/icons/toy-car-bear.svg);
+}
+.icon-like::before {
+  background-image: url(../images/icons/like.svg);
+}
+
+
+@media (max-width: 800px) {
+.benefits-item {
+  font-size: 14px;
+
+}
+
+}
+
+
+
+
+

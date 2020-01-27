@@ -1,0 +1,22 @@
+
+
+.steps .benefits-item {
+  max-width: 20%;
+}
+
+
+.steps .background-image {
+  background-image: url(../images/bg-little-bear-and-girl.png);
+  background-position: bottom -90px right -80px;
+
+}
+
+@media (max-width: 1300px) {
+
+  .steps .background-image {
+    background-image: none;
+  }
+
+
+
+}

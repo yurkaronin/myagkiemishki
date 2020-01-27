@@ -7,7 +7,7 @@
 .first-screen__background {
   background-image: url(../images/bg-bear-and-people.png);
   background-repeat: no-repeat;
-  background-position: right -2% top;
+  background-position: right -2% bottom;
 }
 
 .first-screen__content {
@@ -24,58 +24,13 @@
   line-height: 120%;
 }
 
-.title-price {
-  color: $accent;
-}
-
-.title-thin {
-  font-weight: 400;
-}
-
-.first-screen__benefits {
+.first-screen .benefits-list {
   margin-bottom: 45px;
-}
-
-.icon-spiral {
-  position: absolute;
-  top: 50%;
-  left: -5%;
-  max-width: 206px;
 
 }
 
-.icon-heart {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  max-width: 68px;
-}
-
-.icon-rabbit {
-  position: absolute;
-  bottom: -10px;
-  right: 38%;
-  max-width: 86px;
-  z-index: 1;
-}
-
-.icon-bird {
-  position: relative;
-  display: inline-block;
-
-  &::before {
-    position: absolute;
-    top: -13px;
-    right: -10px;
-    content: '';
-    display: block;
-    background-image: url(../images/icons/bird.svg);
-    width: 54px;
-    height: 37px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+.first-screen .benefits-item {
+  color: $white;
 }
 
 .first-screen__question {
@@ -106,4 +61,123 @@
 .first-screen__button {
   padding: 35px 40px;
   width: 100%;
+}
+
+/* иконки */
+.first-screen__icon-spiral {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+
+}
+
+.first-screen__icon-hearts {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.first-screen__icon-rabbit {
+  position: absolute;
+  bottom: -10px;
+  right: 38%;
+  z-index: 1;
+}
+
+
+@media (max-width: 1400px) {
+
+  .icon-spiral,
+  .icon-rabbit {
+    display: none;
+  }
+
+  .first-screen__background {
+    padding: 0 1%;
+  }
+
+
+}
+
+
+@media (max-width: 1300px) {
+
+  .first-screen__background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/bg-bear-and-people.png);
+  }
+
+
+
+}
+
+@media (max-width: 1000px) {
+  .first-screen__title {
+    font-size: 45px;
+
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .first-screen__icon-hearts,
+  .first-screen .icon-bird:before {
+    display: none;
+  }
+
+  .first-screen__background {
+    background-position: center;
+    background-size: contain;
+  }
+
+
+  .first-screen__title {
+    font-size: 35px;
+
+  }
+
+
+  .first-screen__button {
+    padding: 20px 25px;
+  }
+
+
+}
+
+@media (max-width: 650px) {
+  .buttons-list__item+.buttons-list__item {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .first-screen__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .benefits-item {
+    max-width: 30%;
+    font-size: 12px;
+  }
+
+  .benefits-item:before {
+    width: 35px;
+    height: 35px;
+  }
+
+  .first-screen__content {
+    padding-bottom: 40px;
+    padding-top: 50px;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  .first-screen__button {
+    padding: 15px 10px;
+    font-size: 10px;
+  }
+
 }
