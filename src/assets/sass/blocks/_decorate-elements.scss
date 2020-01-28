@@ -1,0 +1,88 @@
+/* иконки для фона  */
+.icon-spiral {
+  display: inline-block;
+  width: 206px;
+  height: 190px;
+  background-image: url(../images/icons/spiral.svg);
+  max-width: 206px;
+  width: 100%;
+  position: absolute;
+}
+
+.icon-hearts {
+  display: inline-block;
+  height: 102px;
+  background-image: url(../images/icons/hearts.svg);
+  max-width: 69px;
+  width: 100%;
+  position: absolute;
+}
+
+.icon-rabbit {
+  display: inline-block;
+  height: 190px;
+  background-image: url(../images/icons/rabbit.svg);
+  max-width: 86px;
+  width: 100%;
+  position: absolute;
+}
+
+.icon-stars-3 {
+  display: inline-block;
+  height: 77px;
+  background-image: url(../images/icons/stars-3.svg);
+  max-width: 65px;
+  width: 100%;
+  position: absolute;
+}
+.icon-big-star {
+  display: inline-block;
+  height: 112px;
+  background-image: url(../images/icons/big-star.svg);
+  max-width: 143px;
+  width: 100%;
+  position: absolute;
+}
+.icon-toy-teddy-bear-2 {
+  display: inline-block;
+  height: 144px;
+  background-image: url(../images/icons/toy-teddy-bear-2.svg);
+  max-width: 130px;
+  width: 100%;
+  position: absolute;
+}
+
+.icon-bird {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    top: -13px;
+    right: -10px;
+    content: '';
+    display: block;
+    background-image: url(../images/icons/bird.svg);
+    width: 54px;
+    height: 37px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+/* части фона */
+
+.background-texture {
+  background-image: url(../images/bg-sm.png);
+}
+
+.background-color {
+  background-image: linear-gradient(52deg, rgba(254, 236, 215, 0.38) 0%, rgba(254, 236, 215, 0.38) 25%, rgba(255, 183, 141, 0.38) 100%);
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}

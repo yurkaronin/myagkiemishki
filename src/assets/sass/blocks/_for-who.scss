@@ -1,6 +1,6 @@
 .for-who .background-image {
   background-image: url(../images/bg-bear-and-harts.png);
-  background-position: bottom -90px right -80px;
+  background-position: bottom -90px right 70px;
 
 }
 
@@ -10,6 +10,11 @@
   &+.benefits-item {
     padding-left: 20px;
   }
+}
+
+.for-who .benefits-item:before {
+  width: 90px;
+  height: 90px;
 }
 
 
@@ -43,6 +48,27 @@
     margin-bottom: 20px;
   }
 
+  .for-who .benefits-item+.benefits-item {
+    padding-left: 0;
+}
 
+
+
+}
+
+@media (max-width: 450px) {
+  .for-who .benefits-item {
+    max-width: 90%;
+    margin-left: 80px;
+
+  }
+
+  .for-who .benefits-item:before {
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: -65px;
+    top: 0;
+}
 
 }

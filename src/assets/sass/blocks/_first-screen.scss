@@ -64,21 +64,18 @@
 }
 
 /* иконки */
-.first-screen__icon-spiral {
-  position: absolute;
+.first-screen .icon-spiral {
   top: 50%;
   left: -5%;
 
 }
 
-.first-screen__icon-hearts {
-  position: absolute;
+.first-screen .icon-hearts {
   top: 5%;
   right: 5%;
 }
 
-.first-screen__icon-rabbit {
-  position: absolute;
+.first-screen .icon-rabbit {
   bottom: -10px;
   right: 38%;
   z-index: 1;
@@ -87,8 +84,8 @@
 
 @media (max-width: 1400px) {
 
-  .icon-spiral,
-  .icon-rabbit {
+  .first-screen .icon-spiral,
+  .first-screen .icon-rabbit {
     display: none;
   }
 
@@ -120,7 +117,7 @@
 
 @media (max-width: 800px) {
 
-  .first-screen__icon-hearts,
+  .first-screen .icon-hearts,
   .first-screen .icon-bird:before {
     display: none;
   }
