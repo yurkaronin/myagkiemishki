@@ -33,32 +33,12 @@
   color: $white;
 }
 
-.first-screen__question {
-  color: $hover;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  display: inline-block;
-}
-
-.buttons-list {
-  display: flex;
-  flex-wrap: wrap;
+.first-screen .buttons-group {
   max-width: 560px;
 
 }
 
-.buttons-list__item {
-  max-width: 30%;
-  width: 100%;
-
-
-  &+& {
-    margin-left: 27px;
-  }
-}
-
-.first-screen__button {
+.first-screen .button {
   padding: 35px 40px;
   width: 100%;
 }
@@ -98,19 +78,15 @@
 
 
 @media (max-width: 1300px) {
-
   .first-screen__background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/bg-bear-and-people.png);
   }
-
-
 
 }
 
 @media (max-width: 1000px) {
   .first-screen__title {
     font-size: 45px;
-
   }
 
 }
@@ -130,21 +106,20 @@
 
   .first-screen__title {
     font-size: 35px;
-
   }
 
-
-  .first-screen__button {
+  .first-screen .button {
     padding: 20px 25px;
   }
 
 
 }
 
-@media (max-width: 650px) {
-  .buttons-list__item+.buttons-list__item {
-    margin-left: 5%;
+@media (max-width: 470px) {
+  .first-screen .button {
+    padding: 15px 20px;
   }
+
 }
 
 @media (max-width: 450px) {
@@ -171,9 +146,9 @@
 
 }
 
-@media (max-width: 400px) {
-  .first-screen__button {
-    padding: 15px 10px;
+@media (max-width: 370px) {
+  .first-screen .button {
+    padding: 11px 10px;
     font-size: 10px;
   }
 

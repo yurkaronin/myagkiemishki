@@ -1,23 +1,8 @@
-.top-girls {
-  position: relative;
-  overflow: hidden;
-}
-
-
-.top-girls .background-color {
-  background-image: linear-gradient(52deg, #f39d6bc7, #feecd7a6 75%, #f1c695b0);
-}
-
 .product-group {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 45px;
-}
-
-.top-girls .background-image {
-  background-image: url(../images/bg-bear-and-girl.png);
-  background-position: bottom -90px left 200px;
 }
 
 .product-preview {
@@ -31,7 +16,7 @@
 }
 
 .product-preview__wrapper {
-  padding: 20px 30px;
+  padding: 20px 30px 40px;
   text-align: center;
 }
 
@@ -58,17 +43,7 @@
 .new-price {
   font-weight: 900;
   margin-left: 10px;
-}
-
-.product-group .button {
-  background-color: transparent;
-  box-shadow: none;
-  padding: 15px 10px;
-  margin-bottom: 10px;
-  margin-bottom: 10px;
-  font-size: 13px;
-  line-height: 120%;
-
+  text-decoration: none;
 }
 
 .product-preview__details {
@@ -92,63 +67,9 @@
 }
 
 
-.top-girls .icon-stars-3 {
-  top: 55px;
-  left: 70px;
-}
 
-.top-girls .icon-big-star {
-  top: 190px;
-  right: -30px;
-}
-
-.top-girls .icon-toy-teddy-bear-2 {
-  bottom: -25px;
-  right: 25%;
-}
-
-
-@media (max-width: 1750px) {
-  .top-girls .background-image {
-    background-position: bottom -90px left 100px;
-  }
-
-}
-
-@media (max-width: 1500px) {
-  .top-girls .background-image {
-    background-position: bottom -90px left -15px;
-  }
-
-  .top-girls .icon-big-star {
-    top: 55px;
-    right: -50px;
-  }
-
-  .top-girls .icon-toy-teddy-bear-2 {
-    bottom: 10px;
-  }
-
-}
-
-@media (max-width: 1000px) {
-
-  .top-girls .background-image,
-  .top-girls .icon-stars-3 {
-    background-image: none;
-  }
-
-
-
-}
 
 @media (max-width: 800px) {
-
-  .top-girls .icon-toy-teddy-bear-2,
-  .top-girls .icon-big-star {
-    background-image: none;
-  }
-
   .product-preview {
     max-width: 33%;
   }
@@ -156,7 +77,6 @@
   .product-preview__wrapper {
     padding: 20px 15px;
   }
-
 
 
 }

@@ -2,14 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
 }
 
 .messengers__item {
   width: 100%;
   max-width: 30px;
   margin-right: 5px;
-
 }
 
 .messengers__item--phone {
@@ -17,7 +15,6 @@
   font-weight: 700;
   margin: 0;
   margin-left: 15px;
-
 }
 
 .messengers__link {
@@ -29,7 +26,6 @@
 
 
 @media (max-width:1000px) {
-
   .messengers {
     align-items: baseline;
   }

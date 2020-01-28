@@ -121,20 +121,38 @@ img {
 }
 
 
+/* части фона */
+.background-texture {
+  background-image: url(../images/bg-sm.png);
+}
+
+.background-color {
+  background-image: linear-gradient(52deg, rgba(254, 236, 215, 0.38) 0%, rgba(254, 236, 215, 0.38) 25%, rgba(255, 183, 141, 0.38) 100%);
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
 
 
 /* Blocks */
 @import "blocks/messengers";
 @import "blocks/button";
 @import "blocks/benefits-list";
-@import "blocks/decorate-elements";
+@import "blocks/icons";
+@import "blocks/product-group";
+@import "blocks/buttons-group";
 
 @import "blocks/header";
 @import "blocks/navigation";
 @import "blocks/first-screen";
 @import "blocks/for-who";
 @import "blocks/steps";
-@import "blocks/product-group";
+@import "blocks/top-girls";
 
 
 @media (min-width: 1000px) {

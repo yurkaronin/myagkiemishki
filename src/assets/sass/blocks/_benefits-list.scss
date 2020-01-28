@@ -27,63 +27,10 @@
   }
 }
 
-
-
-.icon-bag::before {
-  background-image: url(../images/icons/bag.svg);
-}
-
-.icon-bear::before {
-  background-image: url(../images/icons/toy-teddy-bear-1.svg);
-}
-
-.icon-grass::before {
-  background-image: url(../images/icons/leaves.svg);
-}
-
-.icon-cake::before {
-  background-image: url(../images/icons/cake.svg);
-}
-
-.icon-furniture::before {
-  background-image: url(../images/icons/furniture.svg);
-}
-
-.icon-heart-inside::before {
-  background-image: url(../images/icons/heart-inside.svg);
-}
-
-.icon-gift::before {
-  background-image: url(../images/icons/gift.svg);
-}
-
-
-.icon-toy-teddy-bear-3::before {
-  background-image: url(../images/icons/toy-teddy-bear-3.svg);
-}
-.icon-laptop::before {
-  background-image: url(../images/icons/laptop.svg);
-}
-.icon-wallet::before {
-  background-image: url(../images/icons/wallet.svg);
-}
-.icon-toy-car-bear::before {
-  background-image: url(../images/icons/toy-car-bear.svg);
-}
-.icon-like::before {
-  background-image: url(../images/icons/like.svg);
-}
-
-
 @media (max-width: 800px) {
-.benefits-item {
-  font-size: 14px;
+  .benefits-item {
+    font-size: 14px;
+
+  }
 
 }
-
-}
-
-
-
-
-

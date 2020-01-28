@@ -1,0 +1,38 @@
+.buttons-group__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.buttons-group__question {
+  color: $hover;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.buttons-group__item {
+  max-width: 30%;
+  width: 100%;
+
+
+  &+& {
+    margin-left: 27px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .buttons-group .button {
+    padding: 15px 10px;
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .buttons-group__item+.buttons-group__item {
+    margin-left: 5%;
+  }
+}

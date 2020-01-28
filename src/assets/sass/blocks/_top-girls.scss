@@ -1,0 +1,80 @@
+.top-girls {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.top-girls .background-color {
+  background-image: linear-gradient(52deg, #f39d6bc7, #feecd7a6 75%, #f1c695b0);
+}
+
+.top-girls .background-image {
+  background-image: url(../images/bg-bear-and-girl.png);
+  background-position: bottom -90px left 200px;
+}
+
+.top-girls .icon-stars-3 {
+  top: 55px;
+  left: 70px;
+}
+
+.top-girls .icon-big-star {
+  top: 190px;
+  right: -30px;
+}
+
+.top-girls .icon-toy-teddy-bear-2 {
+  bottom: -25px;
+  right: 25%;
+}
+
+.top-girls__button {
+  max-width: 356px;
+  width: 100%;
+  padding: 35px 45px;
+  font-weight: 700;
+
+}
+
+
+@media (max-width: 1750px) {
+  .top-girls .background-image {
+    background-position: bottom -90px left 100px;
+  }
+
+}
+
+@media (max-width: 1500px) {
+  .top-girls .background-image {
+    background-position: bottom -90px left -15px;
+  }
+
+  .top-girls .icon-big-star {
+    top: 55px;
+    right: -50px;
+  }
+
+  .top-girls .icon-toy-teddy-bear-2 {
+    bottom: 10px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .top-girls .background-image,
+  .top-girls .icon-stars-3 {
+    background-image: none;
+  }
+
+
+}
+
+@media (max-width: 800px) {
+
+  .top-girls .icon-toy-teddy-bear-2,
+  .top-girls .icon-big-star {
+    background-image: none;
+  }
+
+}

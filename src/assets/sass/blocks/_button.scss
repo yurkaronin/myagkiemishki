@@ -40,15 +40,17 @@
 
   }
 
-
-
 }
 
-.button--big {
-  max-width: 356px;
-  width: 100%;
-  padding: 35px 45px;
-  font-weight: 790;
+
+
+.button--transparent {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 120%;
 
 }
 
@@ -63,9 +65,18 @@
 }
 
 @media (max-width: 400px) {
-.button--big {
-  padding: 15px 20px;
-  max-width: 90%;
+  .button--big {
+    padding: 15px 20px;
+    max-width: 90%;
+  }
+
 }
+
+@media (max-width: 370px) {
+
+  .button--transparent {
+    padding: 15px;
+    font-size: 15px;
+  }
 
 }
