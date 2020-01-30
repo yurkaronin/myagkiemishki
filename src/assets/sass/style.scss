@@ -1,7 +1,5 @@
 @import "vars";
-
 @import "fonts";
-
 
 /* Default styles */
 html {
@@ -148,7 +146,6 @@ img {
 @import "blocks/buttons-group";
 
 @import "blocks/header";
-@import "blocks/navigation";
 @import "blocks/first-screen";
 @import "blocks/for-who";
 @import "blocks/steps";
@@ -199,6 +196,7 @@ img {
 
   .title {
     font-size: 45px;
+    margin-bottom: 25px;
   }
 
   .subtitle {
@@ -225,10 +223,11 @@ img {
 
   .title {
     font-size: 35px;
+    margin-bottom: 20px;
   }
 
   .subtitle {
-    font-size: 27px;
+    font-size: 35px;
   }
 
   .wrapper--right {
@@ -240,11 +239,11 @@ img {
 @media (max-width: 450px) {
   .title {
     font-size: 30px;
-    font-weight: 700;
+    margin-bottom: 15px;
   }
 
   .subtitle {
-    font-size: 22px;
+    font-size: 30px;
   }
 
 }
@@ -252,10 +251,11 @@ img {
 @media (max-width: 400px) {
   .title {
     font-size: 25px;
+    margin-bottom: 10px;
   }
 
   .subtitle {
-    font-size: 18px;
+    font-size: 25px;
   }
 
 }

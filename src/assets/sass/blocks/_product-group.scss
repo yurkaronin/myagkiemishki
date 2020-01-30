@@ -1,16 +1,12 @@
 .product-group {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 45px;
 }
 
 .product-preview {
   display: flex;
   flex-direction: column;
-  max-width: 256px;
+  max-width: 100%;
   width: 100%;
-  box-shadow: 0 6px 32px rgba(0, 0, 19, 0.21);
   color: $black;
   background-color: $white;
 }
@@ -66,91 +62,63 @@
   letter-spacing: 0.07px;
 }
 
-
-
-
-@media (max-width: 800px) {
-  .product-preview {
-    max-width: 33%;
-  }
-
+@media (max-width: 770px) {
   .product-preview__wrapper {
-    padding: 20px 15px;
+    padding: 20px 20px 40px;
   }
 
-
-}
-
-@media (max-width: 690px) {
   .product-preview__title {
     font-size: 14px;
-    margin-bottom: 13px;
+    font-weight: 600;
   }
 
   .product-preview__price {
+    justify-content: center;
     font-size: 16px;
     margin-bottom: 15px;
   }
 
-  .product-group .button {
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 10px;
+  .product-preview__link,
+  .product-preview__size {
+    font-size: 14px;
+    font-weight: 500;
     letter-spacing: normal;
+  }
+
+
+}
+
+@media (max-width: 440px) {
+  .product-preview__details {
+    display: flex;
+    flex-direction: column;
   }
 
   .product-preview__link {
-    font-size: 12px;
-    margin-right: 5px;
+    margin-bottom: 10px;
   }
 
+}
+
+@media (max-width: 400px) {
+  .product-preview__title {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+
+  .button--transparent {
+    font-size: 1rem;
+  }
+
+  .product-preview__link,
   .product-preview__size {
-    letter-spacing: normal;
-    font-size: 12px;
+    font-size: 20px;
   }
-
-}
-
-@media (max-width: 620px) {
-  .product-preview {
-    max-width: 47%;
-    margin-bottom: 16px;
-  }
-
-}
-
-@media (max-width: 370px) {
 
   .product-preview__price {
     justify-content: center;
-  }
-
-  .product-group {
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .product-preview {
-    max-width: 85%;
-    margin-bottom: 30px;
-  }
-
-  .product-preview__wrapper {
-    padding: 25px 45px;
-  }
-
-  .product-group .button {
-    padding: 15px;
-    font-size: 15px;
-  }
-
-  .product-preview__link {
-    font-size: 15px;
-    margin-right: 10px;
-  }
-
-  .product-preview__size {
-    font-size: 14px;
+    font-size: 24px;
+    margin-bottom: 25px;
   }
 
 

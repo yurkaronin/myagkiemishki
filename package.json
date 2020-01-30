@@ -25,5 +25,9 @@
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
         "panini": "^1.6.3"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "owl.carousel2": "^2.2.1"
     }
 }

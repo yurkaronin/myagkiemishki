@@ -1,7 +1,6 @@
 var linkNav = document.querySelectorAll('[href^="#"]'); //выбираем все ссылки к якорю на странице
 var tagHtml = document.getElementsByTagName('html')[0];
 
-
 V = 0.3; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 
 for (var i = 0; i < linkNav.length; i++) {
@@ -29,8 +28,32 @@ for (var i = 0; i < linkNav.length; i++) {
   }, false);
 };
 
-
-
 document.querySelector('.nav-button').onclick = function () {
   document.querySelector('html').classList.toggle('show-main-nav');
 }
+
+
+/* Скрипт настроек слайдера OWL CAROUSEL 2 */
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    400: {
+      items: 2
+    },
+    800: {
+      items: 3
+    },
+    800: {
+      items: 3
+    }
+  }
+});

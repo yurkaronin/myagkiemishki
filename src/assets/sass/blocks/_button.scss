@@ -37,7 +37,6 @@
 
     background-color: transparent;
     box-shadow: none;
-
   }
 
 }
@@ -51,7 +50,6 @@
   margin-bottom: 10px;
   font-size: 13px;
   line-height: 120%;
-
 }
 
 
@@ -64,19 +62,18 @@
 
 }
 
-@media (max-width: 400px) {
-  .button--big {
-    padding: 15px 20px;
-    max-width: 90%;
+@media (max-width: 770px) {
+  .button--transparent {
+    padding: 7%;
+    font-size: .6rem;
   }
 
 }
 
-@media (max-width: 370px) {
-
-  .button--transparent {
-    padding: 15px;
-    font-size: 15px;
+@media (max-width: 400px) {
+  .button--big {
+    padding: 15px 20px;
+    max-width: 90%;
   }
 
 }
