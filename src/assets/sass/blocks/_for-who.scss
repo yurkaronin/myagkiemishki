@@ -18,14 +18,14 @@
   height: 90px;
 }
 
-
-@media (max-width: 1200px) {
-  .for-who__background-image {
+@media (max-width: 1400px) {
+  .for-who .background-image {
     background-image: none;
   }
 
-  .wrapper--left {
+  .for-who .wrapper {
     max-width: 100%;
+    padding: 40px 0 90px;
 
   }
 
@@ -33,7 +33,6 @@
 
 
 @media (max-width: 1300px) {
-
   .for-who .background-image {
     background-image: none;
   }
@@ -41,9 +40,16 @@
 
 }
 
+@media (max-width: 900px) {
+  .for-who .benefits-item:before {
+    position: initial;
+    display: block;
+  }
+
+}
+
 
 @media (max-width: 800px) {
-
   .for-who .benefits-item {
     max-width: 50%;
     margin-bottom: 20px;
@@ -51,7 +57,7 @@
 
   .for-who .benefits-item+.benefits-item {
     padding-left: 0;
-}
+  }
 
 
 
@@ -70,6 +76,6 @@
     position: absolute;
     left: -65px;
     top: 0;
-}
+  }
 
 }

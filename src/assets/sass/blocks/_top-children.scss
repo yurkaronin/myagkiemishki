@@ -5,10 +5,18 @@
 
 .top-children .background-image {
   background-image: url(../images/bg-chair-and-child.png);
-  background-position: bottom 0 right 95px;
+  background-position: bottom 0 right 0;
   background-size: 635px 620px;
 }
 
-.top-children .container {
-  padding: 70px 0 90px;
+@media (max-width: 1500px) {
+  .top-children .background-image {
+    background-image: none;
+  }
+
+  .top-children .wrapper {
+    max-width: 100%;
+    padding: 40px 0;
+  }
+
 }

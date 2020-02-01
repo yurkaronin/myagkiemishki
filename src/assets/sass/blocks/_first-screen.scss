@@ -32,6 +32,7 @@
 
 .first-screen .benefits-item {
   color: $white;
+  padding-left: 10px;
 }
 
 .first-screen .buttons-group {
@@ -92,6 +93,32 @@
 
 }
 
+@media (max-width: 900px) {
+  .first-screen .benefits-list {
+    max-width: 100%;
+  }
+
+  .first-screen .benefits-item {
+    color: #fff;
+    padding-left: 60px;
+  }
+
+  .first-screen .benefits-item:before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .benefits-item {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+
+}
+
 @media (max-width: 800px) {
 
   .first-screen .icon-hearts,
@@ -113,6 +140,30 @@
     padding: 20px 25px;
   }
 
+
+}
+
+@media (max-width: 620px) {
+  .first-screen .benefits-list {
+    flex-direction: column;
+  }
+
+  .first-screen .benefits-item {
+    max-width: 75%;
+    margin-bottom: 20px;
+  }
+
+  .first-screen .benefits-item:before {
+    left: 15px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+
+  .first-screen .benefits-item {
+    padding-left: 55px;
+  }
 
 }
 

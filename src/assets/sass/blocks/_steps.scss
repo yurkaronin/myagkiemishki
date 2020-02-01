@@ -88,10 +88,7 @@
   .steps__benefits .benefits-item:after {
     top: 0;
     left: 0;
-  }
-
-  .steps .title {
-    margin-bottom: 35px;
+    padding: 3%;
   }
 
 }
@@ -104,9 +101,10 @@
   }
 
   .steps__benefits .benefits-item:after {
-    padding: 1%;
+    padding: 3%;
     top: 0;
     left: 5px;
+    font-size: 20px;
   }
 
   .benefits-item:before {

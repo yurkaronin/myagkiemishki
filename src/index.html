@@ -18,8 +18,8 @@ description: Главная страница сайта по продаже иг
 
           <ul class="benefits-list list">
             <li class="benefits-item icon-bag"><b>Много наполнителя!</b><br>Игрушки сохраняют форму</li>
-            <li class="benefits-item icon-bear"><b>Много наполнителя!</b><br>Игрушки сохраняют форму</li>
-            <li class="benefits-item icon-grass"><b>Много наполнителя!</b><br>Игрушки сохраняют форму</li>
+            <li class="benefits-item icon-bear"><b>Правильные пропорции</b><br>Без длинных ног-сосисок</li>
+            <li class="benefits-item icon-grass"><b>Гипоаллергенные</b><br>Из натуральных материалов</li>
           </ul>
 
           <div class="buttons-group">
@@ -82,7 +82,7 @@ description: Главная страница сайта по продаже иг
             <span class="subtitle" id="top-girls">ТОП плюшевых игрушек</span>
             <h2 class="title">Для любимой девушки</h2>
 
-            <div class="product-group  owl-carousel owl-theme">
+            <div class="product-group  owl-carousel owl-theme" id="top-girls-carousel">
               <div class="product-group__item  product-preview  label-in-stock  item">
                 <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
                 <div class="product-preview__wrapper">
@@ -209,10 +209,14 @@ description: Главная страница сайта по продаже иг
   <section class="top-children  background-texture">
     <div class="background-image">
       <div class="container">
+        <div class="wrapper">
         <span class="subtitle" id="top-children">ТОП плюшевых игрушек</span>
         <h2 class="title">Для детей</h2>
-        <ul class="product-group product-group--flex  list">
-          <li class="product-group__item label-in-stock">
+
+        <!-- Каруселька товаров  -->
+        <div class="product-group  owl-carousel owl-theme" id="top-children-carousel">
+
+          <div class="product-group__item  product-preview  label-in-stock  item">
             <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
             <div class="product-preview__wrapper">
               <h3 class="product-preview__title">Плюшевый мишка белый</h3>
@@ -228,9 +232,8 @@ description: Главная страница сайта по продаже иг
                 <span class="product-preview__size">Рост : 70 см</span>
               </p>
             </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
+          </div>
+          <div class="product-group__item  product-preview  label-in-stock  item">
             <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
             <div class="product-preview__wrapper">
               <h3 class="product-preview__title">Плюшевый мишка белый</h3>
@@ -246,9 +249,8 @@ description: Главная страница сайта по продаже иг
                 <span class="product-preview__size">Рост : 70 см</span>
               </p>
             </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
+          </div>
+          <div class="product-group__item  product-preview  label-in-stock  item">
             <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
             <div class="product-preview__wrapper">
               <h3 class="product-preview__title">Плюшевый мишка белый</h3>
@@ -264,9 +266,8 @@ description: Главная страница сайта по продаже иг
                 <span class="product-preview__size">Рост : 70 см</span>
               </p>
             </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
+          </div>
+          <div class="product-group__item  product-preview  label-in-stock  item">
             <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
             <div class="product-preview__wrapper">
               <h3 class="product-preview__title">Плюшевый мишка белый</h3>
@@ -282,9 +283,8 @@ description: Главная страница сайта по продаже иг
                 <span class="product-preview__size">Рост : 70 см</span>
               </p>
             </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
+          </div>
+          <div class="product-group__item  product-preview  label-in-stock  item">
             <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
             <div class="product-preview__wrapper">
               <h3 class="product-preview__title">Плюшевый мишка белый</h3>
@@ -300,9 +300,8 @@ description: Главная страница сайта по продаже иг
                 <span class="product-preview__size">Рост : 70 см</span>
               </p>
             </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
+          </div>
+          <div class="product-group__item  product-preview  label-in-stock  item">
             <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
             <div class="product-preview__wrapper">
               <h3 class="product-preview__title">Плюшевый мишка белый</h3>
@@ -318,101 +317,13 @@ description: Главная страница сайта по продаже иг
                 <span class="product-preview__size">Рост : 70 см</span>
               </p>
             </div>
-          </li>
+          </div>
 
-          <li class="product-group__item label-in-stock">
-            <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
-            <div class="product-preview__wrapper">
-              <h3 class="product-preview__title">Плюшевый мишка белый</h3>
-
-              <p class="product-preview__price">
-                <del class="old-price">3 250</del>
-                <ins class="new-price">3 250 руб.</ins>
-              </p>
-
-              <a class="product-preview__button  button  button--transparent" href="">Купить со скидкой</a>
-              <p class="product-preview__details">
-                <a class="product-preview__link" href="">Подробнее</a>
-                <span class="product-preview__size">Рост : 70 см</span>
-              </p>
-            </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
-            <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
-            <div class="product-preview__wrapper">
-              <h3 class="product-preview__title">Плюшевый мишка белый</h3>
-
-              <p class="product-preview__price">
-                <del class="old-price">3 250</del>
-                <ins class="new-price">3 250 руб.</ins>
-              </p>
-
-              <a class="product-preview__button  button  button--transparent" href="">Купить со скидкой</a>
-              <p class="product-preview__details">
-                <a class="product-preview__link" href="">Подробнее</a>
-                <span class="product-preview__size">Рост : 70 см</span>
-              </p>
-            </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
-            <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
-            <div class="product-preview__wrapper">
-              <h3 class="product-preview__title">Плюшевый мишка белый</h3>
-
-              <p class="product-preview__price">
-                <del class="old-price">3 250</del>
-                <ins class="new-price">3 250 руб.</ins>
-              </p>
-
-              <a class="product-preview__button  button  button--transparent" href="">Купить со скидкой</a>
-              <p class="product-preview__details">
-                <a class="product-preview__link" href="">Подробнее</a>
-                <span class="product-preview__size">Рост : 70 см</span>
-              </p>
-            </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
-            <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
-            <div class="product-preview__wrapper">
-              <h3 class="product-preview__title">Плюшевый мишка белый</h3>
-
-              <p class="product-preview__price">
-                <del class="old-price">3 250</del>
-                <ins class="new-price">3 250 руб.</ins>
-              </p>
-
-              <a class="product-preview__button  button  button--transparent" href="">Купить со скидкой</a>
-              <p class="product-preview__details">
-                <a class="product-preview__link" href="">Подробнее</a>
-                <span class="product-preview__size">Рост : 70 см</span>
-              </p>
-            </div>
-          </li>
-
-          <li class="product-group__item label-in-stock">
-            <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
-            <div class="product-preview__wrapper">
-              <h3 class="product-preview__title">Плюшевый мишка белый</h3>
-
-              <p class="product-preview__price">
-                <del class="old-price">3 250</del>
-                <ins class="new-price">3 250 руб.</ins>
-              </p>
-
-              <a class="product-preview__button  button  button--transparent" href="">Купить со скидкой</a>
-              <p class="product-preview__details">
-                <a class="product-preview__link" href="">Подробнее</a>
-                <span class="product-preview__size">Рост : 70 см</span>
-              </p>
-            </div>
-          </li>
-
-        </ul>
+        </div>
 
       </div>
+      </div>
+
     </div>
   </section>
 
@@ -425,7 +336,7 @@ description: Главная страница сайта по продаже иг
             <span class="subtitle" id="top-corp">ТОП плюшевых игрушек</span>
             <h2 class="title">Для коллег и клиентов</h2>
 
-            <div class="product-group  owl-carousel owl-theme">
+            <div class="product-group  owl-carousel owl-theme" id="top-corp-carousel">
               <div class="product-group__item  product-preview  label-in-stock  item">
                 <img class="product-preview__image" src="assets/images/catalog/teddy-bear-white.png" alt="Анонс товара">
                 <div class="product-preview__wrapper">

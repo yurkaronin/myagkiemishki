@@ -29,3 +29,23 @@
   right: 16%;
 
 }
+
+
+@media (max-width: 1500px) {
+  .top-corp .icon-puppy {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .top-corp .background-image {
+    background-image: none;
+  }
+
+  .top-corp .wrapper--right {
+    max-width: 100%;
+
+  }
+
+}

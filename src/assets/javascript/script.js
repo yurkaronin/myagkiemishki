@@ -34,7 +34,55 @@ document.querySelector('.nav-button').onclick = function () {
 
 
 /* Скрипт настроек слайдера OWL CAROUSEL 2 */
-$('.owl-carousel').owlCarousel({
+$('#top-girls-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    400: {
+      items: 2
+    },
+    800: {
+      items: 3
+    },
+    800: {
+      items: 3
+    }
+  }
+});
+
+$('#top-children-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    400: {
+      items: 2
+    },
+    800: {
+      items: 3
+    },
+    800: {
+      items: 3
+    }
+  }
+});
+
+$('#top-corp-carousel').owlCarousel({
   loop: true,
   margin: 10,
   responsiveClass: true,
