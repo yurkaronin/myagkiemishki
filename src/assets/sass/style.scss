@@ -24,6 +24,7 @@ body {
 
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -150,6 +151,9 @@ img {
 @import "blocks/for-who";
 @import "blocks/steps";
 @import "blocks/top-girls";
+@import "blocks/top-corp";
+@import "blocks/top-children";
+
 
 
 @media (min-width: 1000px) {
@@ -208,8 +212,6 @@ img {
   }
 
 
-
-
 }
 
 @media (max-width: 800px) {
@@ -235,6 +237,7 @@ img {
   }
 
 }
+
 
 @media (max-width: 450px) {
   .title {

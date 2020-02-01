@@ -12,20 +12,21 @@
 
 .first-screen__content {
   max-width: 770px;
-  padding: 90px 0;
+  padding: 60px 0 75px;
 
 }
 
 .first-screen__title {
   font-size: 50px;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
   color: $white;
   font-weight: 900;
   line-height: 120%;
 }
 
 .first-screen .benefits-list {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
+  max-width: 77%;
 
 }
 
@@ -45,14 +46,14 @@
 
 /* иконки */
 .first-screen .icon-spiral {
-  top: 50%;
+  top: 37%;
   left: -5%;
 
 }
 
 .first-screen .icon-hearts {
   top: 5%;
-  right: 5%;
+  right: 12%;
 }
 
 .first-screen .icon-rabbit {
