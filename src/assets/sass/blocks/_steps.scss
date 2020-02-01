@@ -6,24 +6,25 @@
 .steps__benefits {
   margin: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
   counter-reset: num;
-  padding: 15px 0 5px 0;
+  padding: 0;
   font-size: 16px;
 
 }
 
 .steps__benefits .benefits-item {
   max-width: 15%;
-  padding: 0 15px;
+  width: 100%;
+  padding: 0;
   position: relative;
   margin: 0;
-  margin-bottom: 40px;
-  margin-right: 50px;
+  margin-bottom: 0;
+  margin-left: 35px;
 
 }
 
@@ -41,44 +42,75 @@
   font-weight: 700;
 }
 
-@media (max-width: 1300px) {
-  .steps__benefits {
-    justify-content: center;
+@media (max-width: 1000px) {
+  .steps .title {
+    margin-bottom: 50px;
   }
-
-  .steps__benefits .benefits-item {
-    max-width: 30%;
-    margin-right: 0;
-  }
-
-  .steps__benefits .benefits-item:after {
-    left: -30px;
-  }
-
 
 }
 
-@media (max-width: 1300px) {
-  .steps__benefits {
-    justify-content: flex-start;
-    margin-left: 20%;
-    max-width: 80%;
-    width: 100%;
-  }
-
-  .steps__benefits .benefits-item:before {
-    position: absolute;
-    left: -55px;
-    top: 0;
-  }
-
+@media (max-width: 900px) {
   .steps__benefits .benefits-item {
-    max-width: 100%;
+    max-width: 45%;
+    margin-bottom: 45px;
+    padding-left: 100px;
+  }
+
+  .benefits-item:before {
+    position: absolute;
+    left: 30px;
+    top: 10px;
   }
 
   .steps__benefits .benefits-item:after {
-    display: none;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 35px;
+    padding: 2%;
+    top: 0px;
+    left: -10px;
+    width: 35px;
   }
 
+}
+
+@media (max-width: 710px) {
+  .benefits-item:before {
+    position: initial;
+  }
+
+  .steps__benefits .benefits-item {
+    max-width: 47%;
+    padding-left: 50px;
+    margin-left: 0;
+  }
+
+  .steps__benefits .benefits-item:after {
+    top: 0;
+    left: 0;
+  }
+
+  .steps .title {
+    margin-bottom: 35px;
+  }
+
+}
+
+@media (max-width: 410px) {
+  .steps__benefits .benefits-item {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .steps__benefits .benefits-item:after {
+    padding: 1%;
+    top: 0;
+    left: 5px;
+  }
+
+  .benefits-item:before {
+    display: none;
+  }
 
 }
