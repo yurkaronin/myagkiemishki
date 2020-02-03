@@ -623,7 +623,54 @@ description: Главная страница сайта по продаже иг
       </div>
       <div class="icon-gift-2"></div>
     </div>
+  </section>
 
+  <section class="feedback  background-texture">
+    <div class="background-color">
+      <div class="container">
+        <span class="subtitle" id="feedback">Форма связи</span>
+        <h2 class="title">Просто отправьте заявку и мы свяжемся с вами</h2>
+
+        <form action="" class="feedback-form">
+          <div class="feedback-form__wrapper">
+            <p class="feedback-form__item">
+              <label for="feedback-form-theme">Тема заявки</label>
+              <select name="theme" id="feedback-form-theme">
+                <option value="Заказ товара" selected="">Заказ товара</option>
+                <option value="Уточнение стоимости">Уточнение стоимости</option>
+                <option value="Выбор товара">Выбор товара</option>
+                <option value="Гарантии">Гарантии</option>
+                <option value="Возврат">Возврат</option>
+                <option value="Другое">Другое</option>
+              </select>
+            </p>
+            <p class="feedback-form__item">
+              <label for="feedback-form-number">Номер заказа</label>
+              <input type="number" id="feedback-form-number">
+            </p>
+          </div>
+          <div class="feedback-form__wrapper">
+            <p class="feedback-form__item">
+              <label for="feedback-form-name">Ваше имя</label>
+              <input type="text" id="feedback-form-name" required>
+            </p>
+            <p class="feedback-form__item">
+              <label for="feedback-form-tel">Ваш телефон</label>
+              <input type="tel" id="feedback-form-tel" required>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </div>
+          <div class="feedback-form__wrapper">
+            <p class="feedback-form__item">
+              <label for="feedback-form-message">Сообщение</label>
+              <textarea name="message" id="feedback-form-message" cols="30"
+                rows="9">Любая полезная информация по вашему вопросу</textarea>
+            </p>
+        </div>
+
+        </form>
+      </div>
+    </div>
   </section>
 
 </main>

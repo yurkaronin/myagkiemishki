@@ -1,0 +1,74 @@
+.feedback .container {
+  padding: 67px 0 80px;
+}
+
+.feedback .background-color {
+  background-image: linear-gradient(-268deg, rgba(255, 183, 141, 0.38) 0%, rgba(254, 236, 215, 0.38) 75%, rgba(254, 236, 215, 0.38) 100%);
+}
+
+.feedback .title {
+  margin-bottom: 54px;
+  max-width: 800px;
+}
+
+.feedback-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedback-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30%;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.feedback-form__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+
+.feedback-form__item label {
+  color: $black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+}
+
+.feedback-form__item select,
+.feedback-form__item input,
+.feedback-form__item textarea {
+  color: $black;
+  font-family: 'Caveat';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  width: 100%;
+}
+
+.feedback-form__item textarea {
+  background-color: $white;
+  color: $black;
+  border: initial;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 5%;
+}
+
+.feedback-form__item:last-child {
+  margin: 0;
+}
