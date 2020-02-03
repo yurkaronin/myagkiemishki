@@ -1,0 +1,48 @@
+.stock {
+  position: relative;
+  background-color: $brand4;
+  color: $white;
+  padding: 40px 0 20px;
+  overflow: hidden;
+}
+
+
+.stock .icon-gift-2 {
+  bottom: 0;
+  right: -140px;
+}
+
+.stock .title {
+  color: $white;
+  margin-bottom: 40px;
+}
+
+.stock .subtitle {
+  color: $accent;
+}
+
+.stock .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.stock__picture {
+  max-width: 600px;
+  width: 100%;
+}
+
+.stock__details {
+  max-width: 460px;
+  width: 100%;
+}
+
+.stock .promo-timer {
+  margin-bottom: 38px;
+}
+
+.stock .button {
+  padding: 36px 93px 35px;
+}
