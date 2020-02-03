@@ -1,0 +1,30 @@
+.reviews {
+  padding: 70px 0 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-airplane {
+  top: 120px;
+  right: -70px;
+  z-index: -1;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  z-index: 11;
+}
+
+.reviews__item {
+  max-width: 30%;
+  width: 100%;
+  margin-bottom: 37px;
+  margin-right: 30px;
+  box-shadow: 0 9px 35px rgba(0, 0, 19, 0.15);
+}
+
+.reviews__item:nth-child(3n){
+  margin-right: 0;
+}

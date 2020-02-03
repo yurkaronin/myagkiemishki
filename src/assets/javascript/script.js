@@ -105,3 +105,27 @@ $('#top-corp-carousel').owlCarousel({
     }
   }
 });
+
+$('#reviews-min-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    400: {
+      items: 2
+    },
+    800: {
+      items: 3
+    },
+    800: {
+      items: 3
+    }
+  }
+});
