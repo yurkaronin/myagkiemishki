@@ -28,6 +28,7 @@
 
 .feedback-form__item {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   max-width: 100%;
@@ -67,8 +68,76 @@
   font-weight: 500;
   border-radius: 15px;
   padding: 5%;
+  margin-bottom: 30px;
 }
 
 .feedback-form__item:last-child {
   margin: 0;
+
+}
+
+.feedback-form .button {
+  margin: 0 auto;
+  padding: 36px 122px 36px 121px;
+}
+
+.feedback-form__button {
+  margin: 0 auto;
+}
+
+
+@media (max-width: 900px) {
+  .feedback-form__wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .feedback-form__item {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
+
+  .feedback-form__item label {
+    max-width: 30%;
+    width: 100%;
+    margin: 0;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .feedback-form__item select,
+  .feedback-form__item input,
+  .feedback-form__item textarea {
+    max-width: 65%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+
+
+}
+
+@media (max-width: 500px) {
+  .feedback-form .button {
+    padding: 20px 35px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .feedback-form__item label {
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .feedback-form__item input,
+  .feedback-form__item select,
+  .feedback-form__item textarea {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+
 }
