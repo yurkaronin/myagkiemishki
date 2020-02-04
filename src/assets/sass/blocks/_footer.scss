@@ -1,0 +1,91 @@
+.footer {
+  background-image: linear-gradient(59deg, #2a1530 0%, #2c1631 2%, #7f4055 100%);
+  color: $white;
+  padding: 45px 40px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.footer__top,
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  max-width: 100px;
+}
+
+.footer__catalog {
+  max-width: 700px;
+  width: 100%;
+}
+
+.footer__contacts {
+  max-width: 150px;
+  width: 100%;
+}
+
+.footer-copyright {
+  max-width: 610px;
+  width: 100%;
+}
+
+.footer-social {
+  max-width: 470px;
+  width: 100%;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 5px solid $accent;
+  padding: 25px 55px 20px;
+
+}
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.footer__title--accent {
+  color: $accent;
+}
+
+
+
+.footer__item ul {
+  list-style: disc;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+}
+
+.footer__telephone {
+  margin: 0;
+  margin-bottom: 12px;
+  letter-spacing: 0.07px;
+  font-weight: 900;
+  display: block;
+}
+
+.footer .footer__link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.07px;
+  color: $accent;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+}
